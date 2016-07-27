@@ -1,0 +1,28 @@
+{
+  "name": "jquery.iran-cities",
+  "version": "1.0.0",
+  "description": "Dynamically add iran cities to your web application. support English and Farsi(Iran) languages.",
+  "main": "jquery.iran-cities.js",
+  "scripts": {
+    "test": "example.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mostafazs/jquery.iran-cities.git"
+  },
+  "keywords": [
+    "iran",
+    "city",
+    "cities",
+    "jquery-plugin",
+    "persian",
+    "farsi",
+    "english"
+  ],
+  "author": "Mostafa Ziasistani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mostafazs/jquery.iran-cities/issues"
+  },
+  "homepage": "https://github.com/mostafazs/jquery.iran-cities#readme"
+}

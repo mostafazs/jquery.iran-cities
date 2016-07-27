@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Example</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" charset="utf-8"></script>
+    <script src="./jquery.iran-cities.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <ul id="CT" data-lang="fa">
+
+    </ul>
+    <select id="CT" data-lang="en">
+
+    </select>
+    <div id="otherElement" data-lang="fa">
+    </div>
+    <div id="nolanguage">
+    </div>
+
+    <script type="text/javascript">
+      $("document").ready(function(){
+        $("ul#CT").cities();
+        $("select#CT").cities();
+        $("div#otherElement").cities();
+        $("div#nolanguage").cities();
+      });
+    </script>
+  </body>
+</html>

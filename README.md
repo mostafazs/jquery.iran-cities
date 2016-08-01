@@ -34,12 +34,19 @@ Make sure you have jquery on page. use example located on `example.html`.
     </select>
     <div id="otherElement" data-lang="fa">
     </div>
+    <input list="my_datalist" name="my_datalist"/>
+    <datalist id="my_datalist">
+    </datalist>
+    <table id="my_table">
+    </table>
 
     <script type="text/javascript">
       $("document").ready(function(){
         $("ul#CT").cities();
         $("select#CT").cities();
         $("div#otherElement").cities();
+        $("datalist#my_datalist").cities();
+        $("table#my_table").cities();
       });
     </script>
   </body>

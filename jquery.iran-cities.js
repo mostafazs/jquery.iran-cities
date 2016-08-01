@@ -1,6 +1,6 @@
 /**
 *  Dynamically add iran cities to your web application. support English and Farsi(Iran) languages.
-*  @version 1.0.0
+*  @version 1.0.1
 *  @author Mostafa Ziasistani
 *  @license MIT
 **/
@@ -38,6 +38,26 @@ $.fn.extend({
         }
         $.each(iran_cities[lang],function(index,value){
           $(current_element).append("<li>"+value+"</li>");
+        });
+      }else if (current_tage_name == "datalist"){
+        $(this).html("");
+        if($(this).attr("data-lang")){
+        var lang = $(this).attr("data-lang");
+      }else{
+        var lang = "en";
+      }
+      $.each(iran_cities[lang],function(index,value){
+        $(current_element).append("<option value='"+value+"'>");
+      });
+      }else if (current_tage_name == "table"){
+        $(this).html("");
+        if($(this).attr("data-lang")){
+          var lang = $(this).attr("data-lang");
+        }else{
+          var lang = "en";
+        }
+        $.each(iran_cities[lang],function(index,value){
+          $(current_element).append("<tr><td style='border: 0.1em solid rgb(188, 183, 183)'>"+value+"</td></td>");
         });
       }else{
         $(this).html("");

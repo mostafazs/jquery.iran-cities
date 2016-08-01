@@ -7,16 +7,27 @@
     <script src="./jquery.iran-cities.js" charset="utf-8"></script>
   </head>
   <body>
+    <h3>ul element</h3>
     <ul id="CT" data-lang="fa">
 
     </ul>
+    <h3>select element</h3>
     <select id="CT" data-lang="en">
 
     </select>
+    <h3>div element(farsi language)</h3>
     <div id="otherElement" data-lang="fa">
     </div>
+    <h3>div element(no language-default english)</h3>
     <div id="nolanguage">
     </div>
+    <h3>datelist element</h3>
+    <input list="my_datalist" name="my_datalist"/>
+    <datalist id="my_datalist">
+    </datalist>
+    <h3>table element</h3>
+    <table id="my_table">
+    </table>
 
     <script type="text/javascript">
       $("document").ready(function(){
@@ -24,6 +35,8 @@
         $("select#CT").cities();
         $("div#otherElement").cities();
         $("div#nolanguage").cities();
+        $("datalist#my_datalist").cities();
+        $("table#my_table").cities();
       });
     </script>
   </body>

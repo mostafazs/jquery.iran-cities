@@ -1,6 +1,6 @@
 {
   "name": "jquery.iran-cities",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dynamically add iran cities to your web application. support English and Farsi(Iran) languages.",
   "main": "jquery.iran-cities.js",
   "scripts": {
@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/mostafazs/jquery.iran-cities/issues"
   },
-  "homepage": "https://github.com/mostafazs/jquery.iran-cities#readme"
+  "homepage": "https://github.com/mostafazs/jquery.iran-cities#readme",
+  "dependencies": {
+		"jquery": "^1.7 || ^2.0"
+	}
 }
